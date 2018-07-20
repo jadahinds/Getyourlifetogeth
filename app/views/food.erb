@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+    <title> Food </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #96CEF1;
+    font-family: Courier
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+    </head>
+    <body>
+            <div class="navbar">
+      <a href="/">Get Your Life Together</a>
+      <a href="/advice">Advice</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">School
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/todo">To-Do List</a>
+          <a href="/resume">Resume</a>
+          <a href="/study">Study Resources</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction1()">Health
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="health">
+          <a href="/food">Food</a>
+          <a href="/exercise">Exercise</a>
+          <a href="/sleep">Sleep</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction2()">Trending
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="trending">
+          <a href="/fashion">Fashion</a>
+          <a href="/video">Video Games</a>
+          <a href="/music">Music</a>
+        </div>
+      </div> 
+    </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction1() {
+    document.getElementById("health").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("health");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction2() {
+    document.getElementById("trending").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("trending");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<h1>Good Eats</h1>
+<h2>Being healthy starts with what you put into your body. So here are some healthy eating tips and a few recipes to try.</h2>
+    <ul> <li>Eat healthy snacks like almonds throughout the day.</li>
+      <li>Drink LOTS of water.</li>
+      <li>Reduce ur consumptin of red meat, eat lean meats like turkey instead.</li>
+      <li>Fruits and veggies are your bestfriends!</li>
+      <li>Avoid too much sugar</li>
+      <li>Make a meal plan (you can include some of the recipes below).</li> <br>
+      <h2>Recipes</h3>
+      <h3>Salads</h3> <p>Combine all your favorite vegetables to make a fresh salad.</p> <img src=https://144f2a3a2f948f23fc61-ca525f0a2beaec3e91ca498facd51f15.ssl.cf3.rackcdn.com/uploads/food_portal_data/image/image/6814/compressed_website-How-to-build-the-perfect-salad_FINAL.jpg><br>
+      <h3>Avocado Toast</h3> <p>Simply grab a slice of your favorite type of bread and an avocado. Toast the bread. In a bowl mash the avocado and mix with some salt, pepper, and lemon. Spread the smashed avocado on the bread. You can top it off with egg, radishes, tomatoes,or any other ingredient you like.</p> <img src=https://d2814mmsvlryp1.cloudfront.net/wp-content/uploads/2014/02/WGC-Avocado-Toast-copy.jpg><br>
+      <h3>Karlie's Kookies</h3> <p>If you are craving something on the sweeter side, instead of grabbing the nearest pastry switch to a healthier alternative. Supermodel Karlie Kloss has a "kookie" recipe that may cure that sweet tooth without as many unhealthy ingredients. Click below for the recipe</p> <img src= http://rufflesandtruffles.com/wp-content/uploads/2013/03/Momofuku-Milk-Bar-Perfect-10-Kookie-6.jpg> <br><a href="https://spoonuniversity.com/recipe/how-to-make-your-own-karlie-klosss-kookies">Karlie's Kookies</a>
+      
+      <style> body{background:lavender}
+h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 300px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 500px}
+
+h2{text-align: center;
+font-family: Courier New;
+}
+
+ul{font-family:courier}
+h4{text-align: center;
+font-family: Courier}
+
+form{ text-align:center;
+font-family: courier;
+font-size:30px; border: 1px solid black;
+    outline-style: outset;
+    outline-color: #96CEF1}</style>  
+    </body>
+</html>

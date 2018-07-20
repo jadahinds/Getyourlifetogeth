@@ -1,0 +1,194 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+    <title> Sleep  </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #96CEF1;
+    font-family: Courier
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+    </head>
+    <body>
+            <div class="navbar">
+      <a href="/">Get Your Life Together</a>
+      <a href="/advice">Advice</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">School
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/todo">To-Do List</a>
+          <a href="/resume">Resume</a>
+          <a href="/study">Study Resources</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction1()">Health
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="health">
+          <a href="/food">Food</a>
+          <a href="/exercise">Exercise</a>
+          <a href="/sleep">Sleep</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction2()">Trending
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="trending">
+          <a href="/fashion">Fashion</a>
+          <a href="/video">Video Games</a>
+          <a href="/music">Music</a>
+        </div>
+      </div> 
+    </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction1() {
+    document.getElementById("health").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("health");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction2() {
+    document.getElementById("trending").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("trending");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<h1>Get your Z's!</h1>
+        <h3>Although we may not like to admit it, sleep is super important. Getting enough sleep can enhance your quality of life and make you a happier and healthier person.</h3>
+      <h4>Here are some sleep tips:</h4>
+<p><ul>
+    <li>Keep a cool room, preferably between 60-67 degrees fahrenheit.</li>
+    <li>Drop that phone! Stay away from your electronic devices at least an hour before bed, that bright light can hurt your sleep.</li>
+    <li>Limit the length of naps throughout the day, they can take time away from ur night's sleep.</li>
+    <li>Exercise daily! Here are some exercises you can try during the day:<a href="/exercise">Exercises</a></li>
+    <li>Set up a sleep schedule to follow, even on weekends.</li>
+    <li>Most importantly, get between 7 to 11 hours of sleep each night. </ul></p>
+    <h4>&emsp;You can use this sleep calculator to determine your bedtime:</h4>
+  <p>
+<form method="post" action="/resultsleep">&emsp;What time do you need to be up? <input type="number" name="waketime" min="1" max="11"> AM&emsp;
+  <input type="submit" value="Submit">
+  </p>
+  <style> body{background:lavender}
+h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 300px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 500px}
+
+h2{text-align: center;
+font-family: Courier New;
+}
+
+h3{text-align: center; font-family:courier}
+h4{text-align: center;
+font-family: Courier}
+
+form{ text-align:center;
+font-family: courier;
+font-size:30px; border: 1px solid black;
+    outline-style: outset;
+    outline-color: #96CEF1}
+ul{font-family: courier}
+ </style>
+    </body>
+</html>

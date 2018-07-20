@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+    <title> Resume </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #96CEF1;
+    font-family: Courier
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+    </head>
+    <body>
+            <div class="navbar">
+      <a href="/">Get Your Life Together</a>
+      <a href="/advice">Advice</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">School
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/todo">To-Do List</a>
+          <a href="/resume">Resume</a>
+          <a href="/study">Study Resources</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction1()">Health
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="health">
+          <a href="/food">Food</a>
+          <a href="/exercise">Exercise</a>
+          <a href="/sleep">Sleep</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction2()">Trending
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="trending">
+          <a href="/fashion">Fashion</a>
+          <a href="/video">Video Games</a>
+          <a href="/music">Music</a>
+        </div>
+      </div> 
+    </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction1() {
+    document.getElementById("health").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("health");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction2() {
+    document.getElementById("trending").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("trending");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<h1> Create Your Resume </h1>
+  <form method = "POST">
+    Name: <input type = "text" name = "name"> <br>
+    School Name: <input type = "text" name = "school"> <br> 
+    Phone Number: <input type = "text" name = "num"> <br>
+    Email: <input type = "text" name = "mail"> <br>
+    Objective: <input type = "text" name = "obj"> <br> 
+    Skills: <input type = "text" name = "skills"> <br>
+    Experience: <input type = "text" name = "exp"> <br>
+    Education: <input type = "text" name = "edu"> <br>
+    References: <input type = "text" name = "ref"> <br>
+    
+    <input type = "submit" value = "Make My Resume">
+    
+  </form>
+    <h2> Objective Tips </h2>
+      <ol> 
+      <li> Start your objective with a verb! ex: obtain, seeking, looking </li>
+      <li> Focus on skills and experiences that relate to the position that you are applying for.</li>
+      <li> Add keywords that are specific to the position and job description. </li>
+      <li> Keep your objective brief (1-2 sentences)! </li>
+      
+      </ol>
+    <h2> Skills Tips</h2>
+    <ol>
+      <li>Remember to add skills that will benefit you in the position you are applying for. </li>
+      <li> Have around 2-3 skills</li>
+      <li> Here are a few examples of skills:</li>
+    </ol>
+    <ul> <li>Communication</li>
+  <li>Ability to work under pressure</li>
+  <li>Decision making</li><li>Leadership</li><li>Creativity</li><li>Foreign languages</li><li>Computer languages</li><li>Mathematics</li><li>And any other skill you have that you feel is important!! </ul>
+    
+    <style>
+    body
+      h1 {text-align: center}
+      
+    </style>
+    <style> body{background:lavender} h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 400px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 700px} 
+h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 300px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 500px}
+
+h2{text-align: center;
+font-family: Courier New;
+}
+
+form{ text-align:center;
+font-family: courier;
+font-size:30px; border: 1px solid black;
+    outline-style: outset;
+    outline-color: #96CEF1}
+ol{font-family: courier; font-size: 20px}
+ul{font-family: courier; font-size:17px}</style>
+    </body>
+</html>

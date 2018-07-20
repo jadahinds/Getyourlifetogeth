@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+    <title> Fashion </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #96CEF1;
+    font-family: Courier
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+    </head>
+    <body>
+            <div class="navbar">
+      <a href="/">Get Your Life Together</a>
+      <a href="/advice">Advice</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">School
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/todo">To-Do List</a>
+          <a href="/resume">Resume</a>
+          <a href="/study">Study Resources</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction1()">Health
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="health">
+          <a href="/food">Food</a>
+          <a href="/exercise">Exercise</a>
+          <a href="/sleep">Sleep</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction2()">Trending
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="trending">
+          <a href="/fashion">Fashion</a>
+          <a href="/video">Video Games</a>
+          <a href="/music">Music</a>
+        </div>
+      </div> 
+    </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction1() {
+    document.getElementById("health").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("health");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction2() {
+    document.getElementById("trending").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("trending");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<h1>Fashion</h1>
+<h2> The Latest Fashion Trends and Styles</h2>
+<h3> Denim </h3>
+<h4> All denim outfits are trending today. Many people are matching thier casual boyfriend jeans with their oversized jeans jacket to make a high fashion look. Check out the denim looks to get inspiration and add your own style to your all-denim look!</h4>
+    <img width = 500px height = 500 px src = https://cdn-img.instyle.com/sites/default/files/styles/480xflex/public/1469644645/072716-karlie-kloss-express-3.jpg?itok=x8KCxJ1h>
+    <img width = 500px height = 500 px src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoy1uTWxz67wLzPRJh9L_sJP1wr7WtXa9t8bxp3vGjtDkZEmzXwQ>
+    <img width = 500px height = 500 px src = https://i.pinimg.com/originals/1d/7a/de/1d7adebe2814165fc1433f3fc5facbfb.jpg>
+    <img width = 500px height = 500 px src = https://media1.popsugar-assets.com/files/thumbor/2iBwYWuyEKBumW7Md0dDoyjlL3U/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2018/07/18/772/n/1922564/e47fdf3829d5b1ab_GettyImages-635026404_master/i/Canadian-Tuxedos.jpg>
+
+
+<h3>Shoes</h3>
+
+<h4> Adidas Superstar & Vans Checkerboard Shoes </h4>
+  <img width = 500px height = 500 px src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFFGwuJs1wiHZbyBYYAobl8K1E9kCX4BtQnurUXmjAAPMzSGx9>
+  <img width = 500px height = 500 px src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRitB8oMNTBqSP63HK62j68LDOJ694TQ9YBSAx44z40go3OrfWp>
+  <img width = 500px height = 500 px src = http://files.starstyle.com/uploads/karlie-kloss/239277.jpg>
+  <img width = 500px height = 500 px src= http://www.highpe.com/wp-content/uploads/2017/08/257fee96e7ec3948c8ec40cbb346ab0e.jpg>
+  
+<h4> Over the knee high boots </h4>
+  <img width = 500px height = 500 px src = https://i.pinimg.com/originals/cd/e8/6f/cde86f161cd9d206c13f24f9166f0e97.jpg>
+  <img width = 500px height = 500 px src = https://media1.popsugar-assets.com/files/thumbor/Z1tsK__cjuMbx3hpOVYupAKcNmo/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2018/07/18/772/n/1922564/ebc04f2b644650ba_GettyImages-667682984_master/i/Thigh-High-Boots.jpg>
+  <img width = 500px height = 500 px src = http://cdn1.clevver.com/wp-content/uploads/2018/06/ariana-grande-pete-davidson-lollipop.jpg>
+<h3>Men's Fashion</h3>  
+  <img width = 500px height = 500 px src = https://static1.fashionbeans.com/wp-content/uploads/2018/07/ss19-trend-topdior.jpg>
+  <img width = 500px height = 500 px src = https://static.fashionbeans.com/wp-content/uploads/2018/07/ss19-trend-4.jpg>
+  <img width = 500px height = 500 px src = http://static.fashionbeans.com/wp-content/uploads/2018/04/logo-prod-1.jpg>
+<h3> Coachella Fashion</h3>
+<h4> Patterns </h4>
+  <img width = 500px height = 500 px src =https://farm8.staticflickr.com/7194/13943788481_a98c197a2a_o.jpg>
+  <img width = 500px height = 500 px src =https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-946400664-master-1523993302.jpg>
+ 
+  <h4> Beyonce and Yellow</h4>
+  <img width = 500px height = 500 px src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiQv6DPNbWSBYxyn2N386xb1jhLHaB7OWpms3cB7F9bv-0Y6YmnQ>
+  <img width = 500px height = 500 px src = https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-945967942-1523729506.jpg>
+<h3> Men's Coachella Fashion </h3>
+  <img width = 500px height = 500 px src = https://i.pinimg.com/originals/63/56/97/6356975fc29afce667c5518d47b5ca42.jpg>
+  <img width = 500px height = 500 px src = https://i.pinimg.com/originals/f9/41/eb/f941ebc809dd44298458e98a885788d0.jpg>
+  <img width = 500px height = 500 px src = https://gq-images.condecdn.net/image/D7lVg4Ldw8p/crop/1020/f/Jared-Leto-GQ_15Apr16_rex_b.jpg>
+  <img width = 500px height = 500 px src = https://media1.popsugar-assets.com/files/thumbor/zwkTQW_m1wA4R_-8V9HlnH5IoPo/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2015/04/13/671/n/1922564/b9f745b69cf0d949_Coachella15_Day3_005/i/Cody-Simpson-Western-inspired-outfit-looked-just-right-Gigi.JPG>
+
+    <style> h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 350px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 450px} body{background:lavender}
+h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 300px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 500px}
+
+h2{text-align: center;
+font-family: Courier New; font-size: 40px
+}
+
+h3{text-align: center; font-family:courier; font-size: 35px}
+h4{text-align: center;
+font-family: Courier; font-size: 25px}
+
+form{ text-align:center;
+font-family: courier;
+font-size:30px; border: 1px solid black;
+    outline-style: outset;
+    outline-color: #96CEF1}</style>
+      
+    </body>
+    
+</html>

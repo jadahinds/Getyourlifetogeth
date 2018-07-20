@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+    <title> Music </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #96CEF1;
+    font-family: Courier
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+    </head>
+    <body>
+            <div class="navbar">
+      <a href="/">Get Your Life Together</a>
+      <a href="/advice">Advice</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">School
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/todo">To-Do List</a>
+          <a href="/resume">Resume</a>
+          <a href="/study">Study Resources</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction1()">Health
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="health">
+          <a href="/food">Food</a>
+          <a href="/exercise">Exercise</a>
+          <a href="/sleep">Sleep</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction2()">Trending
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="trending">
+          <a href="/fashion">Fashion</a>
+          <a href="/video">Video Games</a>
+          <a href="/music">Music</a>
+        </div>
+      </div> 
+    </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction1() {
+    document.getElementById("health").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("health");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction2() {
+    document.getElementById("trending").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("trending");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<h1>What's trending in the Music Industry?</h1>
+<h2> Popular Artists of 2018</h2>
+<h3> Drake </h3>
+<h4> Drake recently released Scorpion. On June 29, Drake released his double album Scorpion, and it quickly broke all kinds of records, crossing over one billion streams in its first week, and all 25 of its tracks currently appear in the Billboard Top 100, including 7 of the top 10, breaking a record set in 1964 by The Beatles.</h4>
+<p align= "center"><img width = 500px height = 500 px src = http://scene-chicago.com/scene/wp-content/uploads/2018/07/070618Scorpion.jpg></p>
+
+<h3> Childish Gambino</h3>
+<h4>Donald Glover, aka, Childish Gambino has but one mission in life. A noble mission ’tis be. Mere months after shocking the nation with his politically charged, visually mind melting anthem, “This is America”, Glover comes to you with but one goal: he wants to own your summer. No more, no less. I mean, it can’t all be us gawking at whatever the hell Drake is up to. Donald Glover has dropped two tracks, one a traditional summer anthem, and the other, more in line with his strong political and societal commentary in his written work and “This is America”. Ladies and gentlemen, get ready for Summertime Magic and Feels Like Summer.</h4>
+<p align= "center"><img width = 500px height = 500 px src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg7y7l74ILJZD7gtBqUNWf2U3s4zabhFzaIkseB_ELOnjHr1oS></p>
+<h3> The Carters</h3>
+<h4>A Beyoncé and JAY-Z joint album is finally here. Under the name the Carters, the duo released a surprise set of nine songs, titled Everything Is Love. It’s a testament to how a complicated love survived through self-reflection, compromise, and ruthless honesty. Jay-Z and Beyonce are currently on tour, On the Run II Tour.</h4>
+<img width = 500px height = 500 px src = https://i.ytimg.com/vi/kbMqWXnpXcA/maxresdefault.jpg>
+<img width = 500px height = 500 px src = data:image/jpeg;base64,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>
+<h3>Ariana Grande</h3>
+<h4>Ariana Grande recently released her new song, "God is a Woman". "God Is a Woman” conjures an enveloping swirl of trip-hoppy R&B and soft rock"God Is a Woman" is an anthem: for female sexuality, for knowing what you want and not being afraid to ask for it, for knowing your own worth, for recognizing that women can be powerful and spiritual.</h4>
+<p align= "center"><img src = https://studybreaks.com/wp-content/uploads/2018/07/Ariana-Grande.jpg></p>
+
+<h2> MTV Video Music Awards </h2>
+<h3>Nominations</h3>
+<h4> Cardi B and “The Carters” — a.k.a. Beyonce and Jay-Z — lead the nominees for the 2018 MTV Video Music Awards, which were announced this afternoon. Cardi received 10 nominations — which are gender-neutral — including video, song and artist of the year, while the Carters received eight, including video of the year, best collaboration and best hip-hop for their eye-popping clip for “Apesh–,” released last month. Other top contenders include Childish Gambino and Drake (with seven nominations each), Bruno Mars (six), Ariana Grande and Camila Cabello (five), and Ed Sheeran, Khalid and Young Thug (four).</h4>
+<img width = 500px height = 500 px src = https://cdn1.thr.com/sites/default/files/imagecache/list_landscape_960x541/2018/01/gettyimages-911540270_copy_-_h_2018.jpg>
+<img width = 500px height = 500 px src = https://pmchollywoodlife.files.wordpress.com/2016/08/mtva-vma-red-carpet-live-stream-ftr.jpg?w=600>
+
+  <h1> Music News</h1>
+  <h3> The Dance Challenge of the Summer </h3>
+<h4> Instagram personality Shiggy uploaded this video the day the album came out with the hashtags #DoTheShiggy and #InMyFeelingsChallenge…and the craze was underway. Both of those hashtags have exploded, with about 20,000 posts under each on Instagram. The most shared posts, of course, are from celebrities. Following the successful release of Scorpion, Drake’s “In My Feelings” challenge has been taking the Internet my storm -- and it isn't stopping in the United States.
+Stateside celebrities like Ciara and Will Smith have already had their fun dancing to the song, but now the challenge is going worldwide. “In My Feelings” is dancing it’s way across the world as fans from Brazil, Paraguay, Nigeria and more post their own takes on the challenge.</h4>
+<p align= "center"><iframe src="https://drive.google.com/file/d/1mFC1f1w0i4ohZ-i_jNq5e9dTyi01RNjd/preview" width="640" height="480"></iframe></p>
+  <h3>Cardi B Gives Birth</h3>
+  <h4>Cardi B's bundle of joy is officially here! 
+
+The hip-hop superstar has given birth to her first child, a baby girl, with rapper Offset. The star confirmed the news on Wednesday with a pink and floral-themed nude photo and simultaneously revealed her little one's name. "Kulture Kiari Cephus 07/10/18," she captioned the photo, revealing that the baby was born on Tuesday. 
+
+News of the newborn's arrival comes three months after Cardi finally confirmed rampant pregnancy rumors during an unforgettable performance on Saturday Night Live. All eyes were on the "Bodak Yellow" MC when cameras panned down to reveal her growing bump, which she draped in a skintight white gown. </h4>
+ <p align= "center"> <img width = 500px height = 500 px src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUtiBdXQbf1nzr9GQdWKkKXVHoSGjfdJ7nEpOyDC7Q_QdVX79a7w></p>
+  <h3> XXXTentacion </h3>
+  <h4>XXXTentacion, who is best known for his albums 17 and ?, is remembered by his fans for his unique music. He first found fame at age 16 through SoundCloud, creating his hit “Look at Me!” in 2015.</h4>
+ <p align= "center"> <img width = 500px height = 500 px src = http://findingoomf.com/wp-content/uploads/2018/06/xxxtentacion.jpg></p>
+  <h3> Justin Bieber and Hailey Balwin Engaged</h3>
+  <h4>Justin Bieber and Hailey Baldwin are making their love forever official.
+
+Over the weekend, fans couldn't contain their excitement when news broke that the "Sorry" singer had proposed while the two were vacationing in the Bahamas. While many were ecstatic that Bieber put a ring on it, others were quick to comment on their seemingly whirlwind romance.
+
+Although Bieber, 24, and Baldwin, 21, have only recently rekindled their romance, the two have actually been friends for several years, and even dated in the past.</h4>
+<p align= "center"><img width = 500px height = 500 px src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTebSFpPRJjBl-qgphTFTWJJlfIa-D4bWKX1D-mzMlsm_LiZUodew></p>
+<h3> Ariana Grande and Pete Davidson Engaged </h3>
+<h4> Whirlwind romance!
+
+Ariana Grande and Pete Davidson are engaged after several weeks of dating, PEOPLE confirms.
+
+“It’s a recent engagement. They’re just two people who found love quickly and make each other happy all the time. They both started talking about it this past weekend. It’s nothing they’ve been hiding,” says a source close to the couple.</h4>
+<p align= "center"><img width = 500px height = 500 px src = https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fpeopledotcom.files.wordpress.com%2F2018%2F05%2Fariana-grande5.jpg&w=1100&q=85></p>
+    
+    <style> body{background:lavender} h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 350px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 450px} 
+body{background:lavender}
+h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 300px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 500px}
+
+h2{text-align: center;
+font-family: Courier New; font-size: 40px
+}
+
+h3{text-align: center; font-family:courier; font-size: 30px}
+h4{text-align: center;
+font-family: Courier}
+
+form{ text-align:center;
+font-family: courier;
+font-size:30px; border: 1px solid black;
+    outline-style: outset;
+    outline-color: #96CEF1}</style>
+    </body>
+</html>
