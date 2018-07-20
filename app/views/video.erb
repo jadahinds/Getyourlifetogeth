@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+    <head> 
+    <title> Video Games </title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+    overflow: hidden;
+    background-color: #96CEF1;
+    font-family: Courier
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+</style>
+    </head>
+    <body>
+            <div class="navbar">
+      <a href="/">Get Your Life Together</a>
+      <a href="/advice">Advice</a>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">School
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="/todo">To-Do List</a>
+          <a href="/resume">Resume</a>
+          <a href="/study">Study Resources</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction1()">Health
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="health">
+          <a href="/food">Food</a>
+          <a href="/exercise">Exercise</a>
+          <a href="/sleep">Sleep</a>
+        </div>
+      </div> 
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction2()">Trending
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="trending">
+          <a href="/fashion">Fashion</a>
+          <a href="/video">Video Games</a>
+          <a href="/music">Music</a>
+        </div>
+      </div> 
+    </div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction1() {
+    document.getElementById("health").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("health");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+
+function myFunction2() {
+    document.getElementById("trending").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("trending");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+<h1> Video Games </h1>
+  <h1>Recently Released</h1>
+    <h2>Octopath Traveler</h2>
+
+<h3>Octopath Traveler is a turn-based role-playing video game developed by Square Enix, in collaboration with Acquire, and published by Nintendo for the Nintendo Switch. The game was released worldwide on July 13, 2018</h3>
+  <p align= "center"><img width= 400px src = https://images-na.ssl-images-amazon.com/images/I/81xv6P29QrL.jpg></p>
+  <h2>Jurassic World Evolution</h2>
+
+<h3>Jurassic World Evolution is a business simulation video game developed and published by Frontier Developments. The game was announced in August 2017, and was released on June 12, 2018 for Microsoft Windows, PlayStation 4 and Xbox One.</h3>
+  <h2>Monster Hunter: World</h2>
+
+<h3>Monster Hunter: World is an action role-playing game developed and published by Capcom. A part of the Monster Hunter series, it was released worldwide for PlayStation 4 and Xbox One in January 2018</h3>
+  <p align= "center"><img width= 600px height= 400px src = http://cdn1.theouterhaven.net/wp-content/uploads/2018/01/Monster-Hunter-World-Header-e1516051577787.jpg url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcU3EWF.rF02bJq3LB9LIVA_LXepm.kCPOQ4_cKJrT3mN4_berUJHzq6gJZ7cH5GVGifqr_Q3LMes5M_uwK6V5ludYsOvh_sAARQx04vZ8kFsax_JSimJVKn8S3ONdHCRl01AfYjPHVJXXAL2qoKciOP0sHLN8chD_zesHDwgilJQ-&w=200&h=300&format=jpg></p>
+  <h2>Fortnite</h2>
+
+<h3>Fortnite is a 2017 video game developed by Epic Games which has been released as different software packages featuring different game modes that otherwise share the same general gameplay and game engine.
+  <br> <p align= "center"><img src = https://img.purch.com/fortnite-screenshots-cover/w/711/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS9GL00vNzYwMDE4L29yaWdpbmFsL2NvdmVyLmpwZw==></p>
+  <h2>Captain Toad: Treasure Tracker</h2>
+
+<h3>Captain Toad: Treasure Tracker is an action puzzle video game developed and published by Nintendo for the Wii U. It is a spin-off of the Super Mario series which builds upon the isometric minigames starring Captain Toad from Super Mario 3D World.</h3>
+  <h2>Crash Bandicoot N. Sane Trilogy</h2>
+
+<h3>Crash Bandicoot N. Sane Trilogy is a platform video game compilation developed by Vicarious Visions and published by Activision.</h3>
+  <p align= "center"><img width= 700px height= 400px src = https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2018/06/crash%20bandicoot-nintendo-switch-05.jpg?itok=A70xNFiL></p>
+  <h2>Dragon Ball FighterZ</h2>
+
+<h3>Dragon Ball FighterZ is a 2.5D fighting game developed by Arc System Works and published by Bandai Namco Entertainment.</h3>
+
+<h1>Coming soon</h1>
+  <h2>Super Smash Bros.™ Ultimate</h2>
+
+<h3>Super Smash Bros. Ultimate is an upcoming fighting game developed by Bandai Namco Studios and Sora Ltd. and published by Nintendo.</h3>
+<p align= "center"><img width= 700px height= 400px src =https://e3.nintendo.com/binaries/5ad667cbf40afb5bf9276461/landscapeHeaderImage.jpg></p>
+  <h2>Shadow of the Tomb Raider</h2>
+
+<h3>Shadow of the Tomb Raider is an upcoming action-adventure video game developed by Eidos Montréal in conjunction with Crystal Dynamics and published by Square Enix.</h3>
+  <h2>Kingdom Hearts III</h2>
+
+<h3>Kingdom Hearts III is an upcoming action role-playing video game developed and published by Square Enix for the PlayStation 4 and Xbox One.</h3>
+  <p align= "center"><img width= 600px height= 400px src = https://www.androidcentral.com/sites/androidcentral.com/files/styles/xlarge/public/article_images/2018/02/kingdom-hearts.jpg?itok=dkfiXzIU></p>
+  <h2>Call of Duty: Black Ops 4</h2>
+
+<h3>Call of Duty: Black Ops 4 is an upcoming multiplayer first-person shooter developed by Treyarch and published by Activision. It is scheduled to be released worldwide on October 12, 2018, for Microsoft Windows, PlayStation 4 and Xbox One.</h3>
+  <h2>Strange Brigade</h2>
+
+<h3>Strange Brigade is an upcoming cooperative third-person shooter video game developed and published Rebellion Developments. It is set to be released for Microsoft Windows, PlayStation 4 and Xbox One on August 28, 2018.</h3>
+
+<h1> Video Game Quiz</h1>
+ <h2>This quiz will match a game to what you like!</h2>
+    <form action="/gameresults" method="post">
+        
+      <h2>What genre do you like?</h2>
+        <input type="radio" name="genre" value="10">Horror<br>
+        <input type="radio" name="genre" value="20">Fighting<br>
+        <input type="radio" name="genre" value="30">Sport<br>
+        <input type="radio" name="genre" value="40">Puzzle<br>
+        
+        <h2>Which do you like?</h2>
+        <input type="radio" name="game" value="1">Action<br>
+        <input type="radio" name="game" value="2">Survival<br>
+        <input type="radio" name="game" value="3">Story<br>
+        <input type="radio" name="game" value="4">RPG<br>
+        <!--<input type="radio" name="restriction" value="6">None<br>-->
+        
+        <!--<input type="radio" name="thing" value="2">Nuts<br>-->
+
+          <!--the values are the numbers and each number is important because what these -->
+          <!--numbers add up to (number pathway/combo) determines the kind of cookie they'll have as a result-->
+
+          <button type = "submit" class="new"> Submit </button>
+      </form>
+      <style> h1 {color:red}
+
+
+body{background:lavender}
+h1{background-color:#96CEF1;
+text-align: center;
+color: white;
+width: 300px;
+    border: 25px white;
+    padding: 30px;
+    margin: 25px;
+position:relative;
+left: 500px}
+
+h2{text-align: center;
+font-family: Courier New;
+}
+
+h3{text-align: center; font-family:courier}
+h4{text-align: center;
+font-family: Courier}
+
+form{ text-align:center;
+font-family: courier;
+font-size:30px; border: 1px solid black;
+    outline-style: outset;
+    outline-color: #96CEF1}
+ul{font-family: courier}
+ </style>
+    </body>
+</html>
